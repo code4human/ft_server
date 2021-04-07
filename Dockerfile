@@ -4,14 +4,11 @@ FROM	debian:buster
 # label
 LABEL	maintainer="taeekim@student.42seoul.kr"
 
-# update
-RUN apt-get update
-RUN apt-get upgrade -y
-
-# install
-RUN	nginx \
+# update & install
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+	nginx \
 	mariadb-server \
-	php7.3-fpm php-mysql php-mbstring \
+	php7.3-fpm && php-mysql && php-mbstring \
 	openssl \
 	vim \
 	wget
