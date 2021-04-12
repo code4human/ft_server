@@ -22,6 +22,8 @@ server {
 
 	server_name ft_server;
 	location / {
+        # autoindex on 추가
+		autoindex on;
 		try_files $uri $uri/ =404;
 	}
 
