@@ -5,7 +5,7 @@ FROM	debian:buster
 LABEL	maintainer="taeekim@student.42seoul.kr"
 
 # update & install
-RUN apt-get update && apt-get upgrade -y && apt-get install -y \
+RUN apt-get update && apt-get install -y \
 	nginx \
 	mariadb-server \
 	php7.3-fpm && php-mysql && php-mbstring \
