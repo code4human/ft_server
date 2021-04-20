@@ -8,7 +8,9 @@ LABEL	maintainer="taeekim@student.42seoul.kr"
 RUN apt-get update && apt-get install -y \
 	nginx \
 	mariadb-server \
-	php7.3-fpm && php-mysql && php-mbstring \
+	php7.3-fpm \ 
+	php-mysql \ 
+	php-mbstring \
 	openssl \
 	vim \
 	wget
